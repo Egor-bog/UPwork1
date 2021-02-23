@@ -1,0 +1,178 @@
+body {
+  margin: 0px;
+}
+
+#suits {
+    display: none;
+}
+
+#cards-to-select-mobile {
+    display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+#subtitle {
+    font-size: 1em;
+}
+
+#calc-wrapper {
+  /*background-color: #407c51;*/
+  background-image: url('http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627451/tttai3mvtiyvaqkaddon.jpg');
+}
+
+.card-list {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.deck-card-wrapper {
+  padding: 2px;
+}
+
+.deck-card {
+  height: 68px;
+}
+
+.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+#board {
+  position: relative;
+  margin: 0px 0px 25px calc((100% - 980px) * 0.5);
+  left: 8px;
+  grid-area: 7 / 1 / 11 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
+#board-bg {
+  border: 8px solid #2b074d;
+  background-color: rgba(255, 255, 255, 0.36);
+  border-radius: 200px;
+  position: absolute;
+  width: 759px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#board-content {
+  height: auto;
+  width: 792px;
+  position: relative;
+}
+
+#board-grid {
+  position: static;
+  height: auto;
+  width: 100%;
+  min-height: 432px;
+}
+
+#hero-cards {
+    margin: 30px 0px 0px 150px;
+}
+
+#villain-cards {
+    margin: 30px 0px 0px 350px;
+}
+
+.card-holder {
+    position: absolute;
+}
+
+#board-cards {
+  margin: 200px 0px 0px 150px;
+  position: absolute;
+}
+
+.calc-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, 20%);
+  vertical-align: middle;
+  font-family: 'Rubik One', sans-serif;
+  text-decoration: none;
+  font-size: 2vw;
+  transition: all .5s;
+  background-color: #3498db;
+  cursor: pointer;
+}
+
+.calc-btn::before {
+  bottom: -15px;
+  height: 15px;
+  width: 100%;
+  left: 8px;
+  transform: skewX(45deg);
+  background-color: #196090;
+}
+
+.calc-btn::after {
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  bottom: -8px;
+  transform: skewY(45deg);
+  background-color: #124364;
+}
+
+.calc-btn:active {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.calc-btn:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+}
+
+.calc-btn:active::after {
+  right: -5px;
+  width: 5px;
+  bottom: -3px;
+}
+
+#actions {
+  position: relative;
+  margin: 0px 0px 25px calc((100% - 980px) * 0.5);
+  left: 8px;
+  display: inline-block;
+  height: 50px;
+}
+
+.equity {
+  background-color: rgb(150,150,150);
+  text-align: center;
+}
+
+.disabled-btn{
+  background-color: #cccccc;
+  color: #666666;
+  cursor: auto;
+}
+
+.spinner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}

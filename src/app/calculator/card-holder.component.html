@@ -1,0 +1,16 @@
+<div class="{{player.label().id}}-cards card-holder">
+    <div class="remove-player-btn left" *ngIf="player.index != -1">
+        <img  *ngIf="calculator.players.length > 2 && player.index > 0" [src]="toCdn('assets/images/delete-icon.png')" (click)="calculator.removePlayer(player.index)"/>
+    </div>
+                            <span class="{{player.class()}}">
+                                <p>
+                                    {{player.label().name}}
+                                </p>
+                            </span>
+  <div id="{{player.label().playerId}}-eq" class="equity" *ngIf="player.equity">
+      Win: {{ player.equity['win'] }}% <br> Tie: {{player.equity['tie'] }}%
+  </div>
+
+  <card *ngFor="let card of player.cards" [card]="card" [calculator]="calculator"></card>
+
+</div>

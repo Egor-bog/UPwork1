@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Texas holdem run it twice calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Texas holdem run it twice poker calculator">
+    <meta name="keywords" content="texas, holdem, poker, calculator, run it twice, odds">
+    <meta name="description"
+          content="Get a complete analysis of variation while running multiple times a full board, or just turn or river. You can also running it three times.">
+
+    <base href="/">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8TNE5W6SFF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'G-8TNE5W6SFF');
+    </script>
+    <script type="text/javascript">
+      var cdnUrl = {
+        'assets/images/cards_zipped/4H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/lzx3hqgxjzonggmeiend.png',
+        'assets/images/cards_zipped/2D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/m4rvzxvb7wkos6wiz6w7.png',
+        'assets/images/cards_zipped/4C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/cbibvlfx1d5ccpa90scy.png',
+        'assets/images/cards_zipped/10D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/ixtuoeq8ro4xpwebhlvw.png',
+        'assets/images/cards_zipped/2S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/acnlsagjvmi3driatt1u.png',
+        'assets/images/cards_zipped/7H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/j9yc3q7lmwhsbwugjt1e.png',
+        'assets/images/cards_zipped/QC.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/akly9c1ziq8o6osywp0m.png',
+        'assets/images/cards_zipped/JH.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/cgpa3c1x1n3w014cutc0.png',
+        'assets/images/cards_zipped/JS.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/qehckztkoyk5ic5shh5y.png',
+        'assets/images/cards_zipped/KH.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/dtdtogd0lqzygt3foauw.png',
+        'assets/images/cards_zipped/AC.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/lvmpyjteimvcxizktric.png',
+        'assets/images/cards_zipped/6D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/wnsa4itdrcnj6z4mjl6a.png',
+        'assets/images/cards_zipped/10H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/iw8f6aaq3giaaqvdsoej.png',
+        'assets/images/cards_zipped/4S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/ur1hxr2hnda4itursi6c.png',
+        'assets/images/cards_zipped/2H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/kiaxbafrsthuqje4z0q0.png',
+        'assets/images/cards_zipped/7C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/cqx4ravvvn8iwp0tqscn.png',
+        'assets/images/cards_zipped/6S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/npe5ivjbnjuzplqyhdgu.png',
+        'assets/images/cards_zipped/JC.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/ucl2qwrekhouoc1ctxmo.png',
+        'assets/images/cards_zipped/5H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/vppcu91nzbknosro7w5u.png',
+        'assets/images/cards_zipped/9H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/oyflppc6duyttnyc4gjk.png',
+        'assets/images/cards_zipped/9D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/vd55ytax3xcthex9dpjo.png',
+        'assets/images/cards_zipped/3D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/d1oyhvyozafs7z9cmtjr.png',
+        'assets/images/cards_zipped/10C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/zt4asx6zjlsqqc21mwsp.png',
+        'assets/images/cards_zipped/KS.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/gcklfosumbcisgkzjlyl.png',
+        'assets/images/cards_zipped/4D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/wh2salkkuj3leu6rxzoj.png',
+        'assets/images/cards_zipped/7S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/tehf4fctqpgpwrcqxhx3.png',
+        'assets/images/cards_zipped/10S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/lxh7huztgnm2dbekcnhu.png',
+        'assets/images/cards_zipped/red_back.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/q558hdxla1of1c7vy532.png',
+        'assets/images/cards_zipped/AS.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/phtxzcjh0vxdhm650k80.png',
+        'assets/images/favicon2.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/lsv6ryo6rychfzxnsn9i.png',
+        'assets/images/cards_zipped/JD.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/yqbgjoktxw4xs5u3vpyk.png',
+        'assets/images/cards_zipped/blue back card.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/kjiatfki0alo4sf9rc5k.png',
+        'assets/images/cards_zipped/3C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/wux1brwffjm8msvptr0q.png',
+        'assets/images/cards_zipped/QD.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/nrukbsjb5i3bpcarxp2i.png',
+        'assets/images/cards_zipped/KD.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/artd3crwpgjuemwtglnq.png',
+        'assets/images/cards_zipped/QS.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/tr9wqsxet7djftwaein8.png',
+        'assets/images/cards_zipped/AH.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/cbbi6m5mmucfchaclxmf.png',
+        'assets/images/cards_zipped/QH.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/pt3bzjqe0eaavpl6tiyt.png',
+        'assets/images/cards_zipped/3S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/rpf03iagauq8ge3chwvc.png',
+        'assets/images/cards_zipped/9S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/xdzbf1pugtejtkjymvaa.png',
+        'assets/images/heart.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/tbtns9ph9ymsxgjfssr8.png',
+        'assets/images/cards_zipped/6C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/q9bwaa7z6oxwsivsnfsm.png',
+        'assets/images/cards_zipped/7D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/nlfaymgkzlhesw6zv0nh.png',
+        'assets/images/cards_zipped/AD.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/dkvkk6toazmhnt4jczsf.png',
+        'assets/images/cards_zipped/2C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/hmbks92qtgixmqsojpsf.png',
+        'assets/images/cards_zipped/3H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/z8f1kcx47g4fkccjta7t.png',
+        'assets/images/diamond.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/tcwgtioaea7kdqw9gvki.png',
+        'assets/images/cards_zipped/KC.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/b51ksznbi43yfqqlt6wa.png',
+        'assets/images/spade.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/ahkfkydygy6v3k7oewhy.png',
+        'assets/images/cards_zipped/6H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/b4ysngsgh4mrr9buiqay.png',
+        'assets/images/cards_zipped/5S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/kcp3omeuxs3jmvivxzyr.png',
+        'assets/images/cards_zipped/9C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/gxhshnojjmxjevorjnyf.png',
+        'assets/images/club.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/glrmsoiklvwtvmn0fl2z.png',
+        'assets/images/cards_zipped/8D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/vdasbr2rx5yjbxlh0gkl.png',
+        'assets/images/cards_zipped/5C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/bs8igr2f8y5t0nph9dil.png',
+        'assets/images/cards_zipped/8S.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/uqoqysfmavcfvdva4pky.png',
+        'assets/images/cards_zipped/8H.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/bpfunbr5tkn7lu7etzy7.png',
+        'assets/images/cards_zipped/8C.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/t0qr4ejknbw6emsinkyu.png',
+        'assets/images/cards_zipped/5D.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/kedhzj3w637c2rduuehh.png',
+        'assets/images/cards_zipped/red_back_bordered.jpg': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/vulluzyxspu3rtzixslf.jpg',
+        'assets/images/favicon.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/u0slahrycgv6vgvfnkeb.png',
+        'assets/images/delete-icon.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627450/vouotyboblnv7qwvwvqd.png',
+        'assets/images/cards_zipped/green_carpet.jpg': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627451/tttai3mvtiyvaqkaddon.jpg',
+        'assets/images/cards_zipped/green_carpet.png': 'http://res.cloudinary.com/hrhbly7z7/image/upload/v1612627452/dnx8jojazdjcq3iuyvns.png'
+      }
+    </script>
+    <style type="text/css">
+      body {
+        margin: 0px;
+      }
+
+      html, body {
+        overflow-x: hidden;
+        height: 100%;
+
+      }
+
+      @media only screen and (max-width: 600px) {
+        html, body {
+          overflow-x: hidden;
+          height: 100%;
+
+        }
+
+        body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+      }
+    </style>
+
+
+  <body>
+    <app-root></app-root>
+  <!-- Include anychart component -->
+  <script async src="https://cdn.anychart.com/releases/v8/js/anychart-base.min.js"></script>
+  <script async src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script async src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <link href="https://cdn.anychart.com/releases/v8/css/anychart-ui.min.css" type="text/css" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+  <link href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" type="text/css"
+        rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+  </body>
+
+</html>

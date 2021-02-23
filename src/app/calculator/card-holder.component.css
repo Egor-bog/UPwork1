@@ -1,0 +1,87 @@
+.left {
+    float: left;
+}
+
+.hero-cards {
+    margin: 30px 0px 0px 150px;
+}
+
+.villain1-cards {
+    margin: 30px 0px 0px 350px;
+}
+
+.villain2-cards {
+    margin: 30px 0px 0px 550px;
+}
+
+.villain3-cards {
+    margin: 165px 0px 0px 630px;
+}
+
+.villain4-cards {
+    margin: 270px 0px 0px 520px;
+}
+
+.card-holder {
+    position: absolute;
+}
+
+.board-cards {
+    margin: 200px 0px 0px 150px;
+    position: absolute;
+}
+
+.equity {
+    -webkit-text-stroke: 0px black;
+    color: bisque;
+    text-align: center;
+}
+
+.remove-player-btn img {
+    height: 20px;
+    margin-top: 8px;
+}
+.remove-player-btn {
+    width: 30px;
+    margin: 5px 10px 0px 0px;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .category-label {
+        float: left;
+        width: 65px;
+    }
+
+    .board-label {
+        display: none;
+    }
+
+    .card-holder, #board-cards {
+        margin: 0 0 0 10px;
+    }
+
+    .equity {
+        float: right;
+        font-size: 12px;
+        margin-right: 10px;
+        margin-top: 28px;
+    }
+
+    .card-holder, #board-cards {
+        position: relative;
+        height: 145px;
+        font-size: 25px;
+        font-weight: bolder;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+
+    .card-holder.deck-card-wrapper {
+        padding: 4px !important;
+    }
+    .remove-player-btn {
+        margin-top: 20px;
+    }
+}
