@@ -24,7 +24,7 @@
   </div>
 
   <div id="cards-to-select">
-    <ul>
+    <ul class="cards-to-select-wrapper">
 
       <li *ngFor="let suit of calculator.suits" class="card-list">
         <div *ngFor="let i of calculator.cardIndices" class="deck-card-wrapper left" [class.invisible]="calculator.selectedCards[i + suit]">
