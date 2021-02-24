@@ -3,23 +3,26 @@
 }
 
 .hero-cards {
-    margin: 30px 0px 0px 150px;
+    margin: 20px 0px 0px 150px;
 }
 
 .villain1-cards {
-    margin: 30px 0px 0px 350px;
+    margin: 20px 0px 0px 350px;
 }
 
 .villain2-cards {
-    margin: 30px 0px 0px 550px;
+    margin: 20px 0px 0px 550px;
 }
 
 .villain3-cards {
-    margin: 165px 0px 0px 630px;
+    margin: 285px 0px 0px 150px;
 }
 
 .villain4-cards {
-    margin: 270px 0px 0px 520px;
+    margin: 285px 0px 0px 520px;
+}
+.villain5-cards {
+    margin: 285px 0px 0px 600px;
 }
 
 .card-holder {
@@ -27,7 +30,7 @@
 }
 
 .board-cards {
-    margin: 200px 0px 0px 150px;
+    margin: 70px 0px 0px 255px;
     position: absolute;
 }
 

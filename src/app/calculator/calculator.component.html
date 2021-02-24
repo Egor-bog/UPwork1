@@ -44,6 +44,7 @@
     <button class="calc-btn add-player-btn" [disabled]="calculator.isPlayersLimitReached()" [class.disabled-btn]="calculator.isPlayersLimitReached()" (click)="calculator.addNewPlayer()">
       <span> + Add player</span>
     </button>
+
   </div>
 
   <div id="board">
@@ -80,9 +81,8 @@
   <div id="results">
 
   </div>
-
+  <p>
+    *depending on amount missing cards, percentage may be an approximation only (up to ~0.5% diff on a full
+    missing board)
+  </p>
 </div>
-<p>
-  *depending on amount missing cards, percentage may be an approximation only (up to ~0.5% diff on a full
-  missing board)
-</p>
