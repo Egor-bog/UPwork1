@@ -6,8 +6,8 @@ function toCdn(file) {
 
 @Injectable()
 export class Card {
-  public redBack: string = toCdn('assets/images/cards_zipped/red_back.png')
-  public redBackBordered: string = toCdn('assets/images/cards_zipped/red_back_bordered.jpg')
+  public redBack: string = toCdn('assets/images/cards_zipped/newGraySm.png')
+  public redBackBordered: string = toCdn('assets/images/cards_zipped/newGraySmBr.png')
 
   constructor(
       @Inject('imageId') public imageId: string,

@@ -35,8 +35,9 @@ export class CalculatorService {
   }
 
   addNewPlayer() {
-    if (this.players.length < 5) {
+    if (this.players.length < 6) {
       this.addPlayer(this.players.length);
+      console.log(this.players.length)
     }
     this.resetBoard();
   }
@@ -216,7 +217,7 @@ export class CalculatorService {
   }
 
   isPlayersLimitReached() {
-    return this.players.length >= 5;
+    return this.players.length >= 6;
   }
 
   getAllCard() {
