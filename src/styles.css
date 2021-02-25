@@ -22,7 +22,7 @@ a {
 p{
   color: white;
   text-align: center;
-  margin: 0;
+  margin-bottom: 2px;
 }
 button {
   font-family: Arial, sans-serif;
