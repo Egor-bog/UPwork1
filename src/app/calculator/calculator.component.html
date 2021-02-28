@@ -1,8 +1,10 @@
 <div id="calc-wrapper">
   <div id="cards-to-select-mobile">
-
-
+   
+    <h1 class="title-calc">Texas Hold'em Poker Odds Calculator
+    </h1>
     <div id="suits">
+      
       <div id="hearts" class="left suit-select"><img [src]="toCdn('assets/images/heart.png')" (click)="moveToIndex(0)"></div>
       <div id="diamonds" class="left suit-select"><img [src]="toCdn('assets/images/diamond.png')" (click)="moveToIndex(1)"></div>
       <div id="spades" class="left suit-select"><img [src]="toCdn('assets/images/spade.png')" (click)="moveToIndex(2)"></div>
@@ -24,6 +26,8 @@
   </div>
 
   <div id="cards-to-select">
+    <h1 class="title-calc">Texas Hold'em Poker Odds Calculator
+    </h1>
     <ul class="cards-to-select-wrapper">
 
       <li *ngFor="let suit of calculator.suits" class="card-list">
