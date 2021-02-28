@@ -116,7 +116,7 @@ button.add-player-btn {
     width:225px;
     display:block;
     border:1px solid #fff;
-    margin: 20px auto;
+    margin: 20px auto 0;
     font-family: 'Dosis', sans;
     font-weight:200;
     text-transform:uppercase;
@@ -457,3 +457,35 @@ img.deck-card {
     text-align: center;
 }
 
+.wrapper-conteiner {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.short-text {
+    margin: 0 auto;
+    max-width: 780px;
+    color: rgb(163, 163, 163);
+    font-size: 18px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1093px) {
+    .wrapper-conteiner {
+        flex-direction: column;
+
+    }
+
+    .wrapper-shot-txt {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .short-text {
+        order: 1;
+    }
+    
+}

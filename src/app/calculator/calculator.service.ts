@@ -85,7 +85,7 @@ export class CalculatorService {
       }
       return key + '=' + params[key];
     }).join('&');
-    return fetch("/api/multi-calc?" + queryString, {"method": "get"}).then(r => r.json());
+    return fetch("https://texas-multirun.herokuapp.com/api/multi-calc?" + queryString, {"method": "get"}).then(r => r.json());
   }
 
   initChart(chartData) {

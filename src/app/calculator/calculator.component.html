@@ -24,10 +24,11 @@
       </div>
     </carousel>
   </div>
-
-  <div id="cards-to-select">
-    <h1 class="title-calc">Texas Hold'em Poker Odds Calculator
+<h1 class="title-calc">Texas Hold'em Poker Odds Calculator
     </h1>
+<div class="wrapper-conteiner">
+  <div id="cards-to-select">
+    
     <ul class="cards-to-select-wrapper">
 
       <li *ngFor="let suit of calculator.suits" class="card-list">
@@ -44,44 +45,52 @@
 
     </ul>
   </div>
-  <div id="add-player">
-    <button class="calc-btn add-player-btn" [disabled]="calculator.isPlayersLimitReached()" [class.disabled-btn]="calculator.isPlayersLimitReached()" (click)="calculator.addNewPlayer()">
-      <span> + Add player</span>
-    </button>
-
-  </div>
-
-  <div id="board">
-    <div id="board-bg">
-
+  <div class="wrapper-shot-txt">
+    <div class="short-text">
+      The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
     </div>
-    <div id="board-content">
-      <div id="board-grid">
-        <card-holder [calculator]="calculator" [player]="player" *ngFor="let player of calculator.players"></card-holder>
-
-        <div id="add-player-mobile">
-          <button class="calc-btn add-player-btn" [disabled]="calculator.isPlayersLimitReached()" [class.disabled-btn]="calculator.isPlayersLimitReached()" (click)="calculator.addNewPlayer()">
-            <span> + Add player</span>
-          </button>
+    <div id="add-player">
+      <button class="calc-btn add-player-btn" [disabled]="calculator.isPlayersLimitReached()" [class.disabled-btn]="calculator.isPlayersLimitReached()" (click)="calculator.addNewPlayer()">
+        <span> + Add player</span>
+      </button>
+  
+    </div>
+  
+    <div id="board">
+      <div id="board-bg">
+  
+      </div>
+      <div id="board-content">
+        <div id="board-grid">
+          <card-holder [calculator]="calculator" [player]="player" *ngFor="let player of calculator.players"></card-holder>
+  
+          <div id="add-player-mobile">
+            <button class="calc-btn add-player-btn" [disabled]="calculator.isPlayersLimitReached()" [class.disabled-btn]="calculator.isPlayersLimitReached()" (click)="calculator.addNewPlayer()">
+              <span> + Add player</span>
+            </button>
+          </div>
+          <card-holder [calculator]="calculator" [player]="calculator.board"></card-holder>
         </div>
-        <card-holder [calculator]="calculator" [player]="calculator.board"></card-holder>
       </div>
     </div>
-  </div>
-  <div id="actions">
-    <div id="twice-wrapper" class="left">
-      <button id="run-twice" class="calc-btn" [disabled]="!calculator.validData" [class.disabled-btn]="!calculator.validData" (click)="calculator.sendAjaxAndSetResults(2)">
-        <span>Run it twice</span>
-      </button>
+    <div id="actions">
+      <div id="twice-wrapper" class="left">
+        <button id="run-twice" class="calc-btn" [disabled]="!calculator.validData" [class.disabled-btn]="!calculator.validData" (click)="calculator.sendAjaxAndSetResults(2)">
+          <span>Run it twice</span>
+        </button>
+      </div>
+      <div id="three-wrapper" class="left">
+        <button id="run-three" class="calc-btn" [disabled]="!calculator.validData" [class.disabled-btn]="!calculator.validData" (click)="calculator.sendAjaxAndSetResults(3)">
+          <span>Run it three times</span></button>
+      </div>
+      <div class="clear">
+  
+      </div>
     </div>
-    <div id="three-wrapper" class="left">
-      <button id="run-three" class="calc-btn" [disabled]="!calculator.validData" [class.disabled-btn]="!calculator.validData" (click)="calculator.sendAjaxAndSetResults(3)">
-        <span>Run it three times</span></button>
-    </div>
-    <div class="clear">
-
-    </div>
-  </div>
+  
+  </div> 
+</div>
+ 
   <div id="results">
 
   </div>
